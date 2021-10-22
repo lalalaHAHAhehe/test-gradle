@@ -24,7 +24,7 @@ dependencies {
     testImplementation 'org.projectlombok:lombok:1.18.22'
     implementation 'org.projectlombok:lombok:1.18.22'
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
-    testCompile 'org.springframework.boot:spring-boot-starter-test:2.5.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.5.5'
     implementation group: 'com.alibaba', name: 'fastjson', version: '1.2.78'
     testImplementation group: 'org.testng', name: 'testng', version: '7.4.0'
 }
