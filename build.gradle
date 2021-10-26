@@ -1,12 +1,13 @@
-ext {
-    BUILD_PROFILE = project.hasProperty('bulidProfile') ? bulidProfile : "dev"
-    println (">>>current build profile is :"+BUILD_PROFILE)
-}
 
 plugins {
     id 'org.springframework.boot' version '2.5.5'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+}
+
+ext {
+    BUILD_PROFILE = project.hasProperty('bulidProfile') ? bulidProfile : ""
+    println (">>>current build profile is :"+BUILD_PROFILE)
 }
 
 group = 'com.example'
